@@ -1,0 +1,453 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <div data-layout="container">
+        <div class="content">
+          <section class="bg-1100 py-0 text-400 d-none d-md-block">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-sm-6 text-center text-sm-start ms-lg-n2"> <a class="btn btn-link btn-sm px-2 link-300" href="#!"> Buyer Protection </a><a class="btn btn-link btn-sm px-2 link-300" href="#!"><span class="fw-bolder fs-9 icon-Headset pe-1"> </span>Help </a><a class="btn btn-link btn-sm px-2 link-300" href="#!"> +32 477 22 29 76</a></div>
+                <div class="col-sm-6 text-center text-sm-end pe-lg-2"> <a class="btn btn-link btn-sm px-2 link-300" href="#!"> Sign in / Join </a><a class="btn btn-link btn-sm px-2 link-300 pe-md-0" href="#!"><span class="fw-bolder fs-9 icon-Add-Cart"> </span><span class="d-inline-block ps-1">2 </span></a></div>
+              </div>
+            </div>
+          </section>
+          <nav class="navbar navbar-top navbar-expand-lg bg-white navbar-double sticky-top top-0 start-0">
+            <div class="container"><a class="navbar-brand" href="../"><img src="{% static 'assets/images/shop/shop-logo.jpg' %}" alt="" width="200" /></a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarStandard" aria-controls="navbarStandard" aria-expanded="false" aria-label="Toggle navigation" data-hamburger-icon="data-hamburger-icon"><span class="hamburger hamburger--emphatic"><span class="hamburger-box"> <span class="hamburger-inner"></span></span></span></button>
+              <div class="collapse navbar-collapse w-100" id="navbarStandard">
+                <ul class="navbar-nav navbar-nav-top justify-content-end flex-1 me-lg-n2" data-top-nav-dropdowns="data-top-nav-dropdowns">
+                  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Homes<span class="fas fa-chevron-down dropdown-toggle-icon"></span></a>
+                    <ul class="dropdown-menu navbar-dropdown-caret">
+                      <li> <a class="dropdown-item" href="../homes/conference.html">
+                          <div class="dropdown-item-wrapper">Conference
+                          </div>
+                        </a>
+                      </li>
+                      <li> <a class="dropdown-item" href="../homes/digital-agency.html">
+                          <div class="dropdown-item-wrapper">Digital Agency
+                          </div>
+                        </a>
+                      </li>
+                      <li> <a class="dropdown-item" href="../homes/education.html">
+                          <div class="dropdown-item-wrapper">Education
+                          </div>
+                        </a>
+                      </li>
+                      <li> <a class="dropdown-item" href="../homes/hospital.html">
+                          <div class="dropdown-item-wrapper">Hospital
+                          </div>
+                        </a>
+                      </li>
+                      <li> <a class="dropdown-item" href="../homes/hotel.html">
+                          <div class="dropdown-item-wrapper">Hotel
+                          </div>
+                        </a>
+                      </li>
+                      <li> <a class="dropdown-item" href="../homes/landing-nokia.html">
+                          <div class="dropdown-item-wrapper">Landing NOKIA
+                          </div>
+                        </a>
+                      </li>
+                      <li> <a class="dropdown-item" href="../homes/landing-software.html">
+                          <div class="dropdown-item-wrapper">Landing Software
+                          </div>
+                        </a>
+                      </li>
+                      <li> <a class="dropdown-item" href="../homes/personal.html">
+                          <div class="dropdown-item-wrapper">Personal
+                          </div>
+                        </a>
+                      </li>
+                      <li> <a class="dropdown-item" href="../homes/restaurant.html">
+                          <div class="dropdown-item-wrapper">Restaurant
+                          </div>
+                        </a>
+                      </li>
+                      <li> <a class="dropdown-item active" href="../homes/shop.html">
+                          <div class="dropdown-item-wrapper">Shop
+                          </div>
+                        </a>
+                      </li>
+                      <li> <a class="dropdown-item" href="../homes/travel-agency.html">
+                          <div class="dropdown-item-wrapper">Travel Agency
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Pages<span class="fas fa-chevron-down dropdown-toggle-icon"></span></a>
+                    <ul class="dropdown-menu navbar-dropdown-caret">
+                      <li> <a class="dropdown-item" href="../pages/starter.html">
+                          <div class="dropdown-item-wrapper">Starter
+                          </div>
+                        </a>
+                      </li>
+                      <li> <a class="dropdown-item" href="../pages/rtl.html">
+                          <div class="dropdown-item-wrapper">RTL
+                          </div>
+                        </a>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="about" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                          <div class="dropdown-item-wrapper"><span>About</span><span class="fas fa-chevron-right dropdown-indicator-icon d-none d-lg-block"> </span><span class="fas fa-chevron-down dropdown-indicator-icon d-lg-none"> </span></div>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li> <a class="dropdown-item" href="../pages/about-company.html">
+                              <div class="dropdown-item-wrapper">About Company
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/about-team.html">
+                              <div class="dropdown-item-wrapper">About Team
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="career" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                          <div class="dropdown-item-wrapper"><span>Career</span><span class="fas fa-chevron-right dropdown-indicator-icon d-none d-lg-block"> </span><span class="fas fa-chevron-down dropdown-indicator-icon d-lg-none"> </span></div>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li> <a class="dropdown-item" href="../pages/careers.html">
+                              <div class="dropdown-item-wrapper">Careers
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/job-details.html">
+                              <div class="dropdown-item-wrapper">Job Details
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="contacts" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                          <div class="dropdown-item-wrapper"><span>Contacts</span><span class="fas fa-chevron-right dropdown-indicator-icon d-none d-lg-block"> </span><span class="fas fa-chevron-down dropdown-indicator-icon d-lg-none"> </span></div>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li> <a class="dropdown-item" href="../pages/contact-1.html">
+                              <div class="dropdown-item-wrapper">Contact 1
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/contact-2.html">
+                              <div class="dropdown-item-wrapper">Contact 2
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/contact-3.html">
+                              <div class="dropdown-item-wrapper">Contact 3
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="pricing" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                          <div class="dropdown-item-wrapper"><span>Pricing</span><span class="fas fa-chevron-right dropdown-indicator-icon d-none d-lg-block"> </span><span class="fas fa-chevron-down dropdown-indicator-icon d-lg-none"> </span></div>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li> <a class="dropdown-item" href="../pages/pricing-1.html">
+                              <div class="dropdown-item-wrapper">Pricing 1
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/pricing-2.html">
+                              <div class="dropdown-item-wrapper">Pricing 2
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="services" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                          <div class="dropdown-item-wrapper"><span>Services</span><span class="fas fa-chevron-right dropdown-indicator-icon d-none d-lg-block"> </span><span class="fas fa-chevron-down dropdown-indicator-icon d-lg-none"> </span></div>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li> <a class="dropdown-item" href="../pages/services-1.html">
+                              <div class="dropdown-item-wrapper">Services 1
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/services-2.html">
+                              <div class="dropdown-item-wrapper">Services 2
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/services-3.html">
+                              <div class="dropdown-item-wrapper">Services 3
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="accounts" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                          <div class="dropdown-item-wrapper"><span>Accounts</span><span class="fas fa-chevron-right dropdown-indicator-icon d-none d-lg-block"> </span><span class="fas fa-chevron-down dropdown-indicator-icon d-lg-none"> </span></div>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li> <a class="dropdown-item" href="../pages/log-in.html">
+                              <div class="dropdown-item-wrapper">Log in (Simple)
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/log-in-social.html">
+                              <div class="dropdown-item-wrapper">Log in (With Social)
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/profile.html">
+                              <div class="dropdown-item-wrapper">Profile
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/settings.html">
+                              <div class="dropdown-item-wrapper">Settings
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/recovery.html">
+                              <div class="dropdown-item-wrapper">Account Recovery
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="utility" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                          <div class="dropdown-item-wrapper"><span>Utility</span><span class="fas fa-chevron-right dropdown-indicator-icon d-none d-lg-block"> </span><span class="fas fa-chevron-down dropdown-indicator-icon d-lg-none"> </span></div>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li> <a class="dropdown-item" href="../pages/404.html">
+                              <div class="dropdown-item-wrapper">404
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/500.html">
+                              <div class="dropdown-item-wrapper">500
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/maintenance.html">
+                              <div class="dropdown-item-wrapper">Maintenance
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="Shop" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                          <div class="dropdown-item-wrapper"><span>Shop</span><span class="fas fa-chevron-right dropdown-indicator-icon d-none d-lg-block"> </span><span class="fas fa-chevron-down dropdown-indicator-icon d-lg-none"> </span></div>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li> <a class="dropdown-item" href="../pages/shop-products-list.html">
+                              <div class="dropdown-item-wrapper">Products List
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/shop-products-grid.html">
+                              <div class="dropdown-item-wrapper">Products Grid
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/shop-product-details.html">
+                              <div class="dropdown-item-wrapper">Product Details
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/shop-cart.html">
+                              <div class="dropdown-item-wrapper">Cart
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="Portfolio" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                          <div class="dropdown-item-wrapper"><span>Portfolio</span><span class="fas fa-chevron-right dropdown-indicator-icon d-none d-lg-block"> </span><span class="fas fa-chevron-down dropdown-indicator-icon d-lg-none"> </span></div>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li> <a class="dropdown-item" href="../pages/portfolio-1.html">
+                              <div class="dropdown-item-wrapper">List Title Inside
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/portfolio-2.html">
+                              <div class="dropdown-item-wrapper">List Title Outside
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/portfolio-3.html">
+                              <div class="dropdown-item-wrapper">List Title Hover
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/portfolio-details.html">
+                              <div class="dropdown-item-wrapper">Portfolio Details
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/portfolio-case-study.html">
+                              <div class="dropdown-item-wrapper">Case Study
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" id="blog" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                          <div class="dropdown-item-wrapper"><span>Blog</span><span class="fas fa-chevron-right dropdown-indicator-icon d-none d-lg-block"> </span><span class="fas fa-chevron-down dropdown-indicator-icon d-lg-none"> </span></div>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li> <a class="dropdown-item" href="../pages/blog-list.html">
+                              <div class="dropdown-item-wrapper">Blog list
+                              </div>
+                            </a>
+                          </li>
+                          <li> <a class="dropdown-item" href="../pages/blog-article.html">
+                              <div class="dropdown-item-wrapper">Article
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Components<span class="fas fa-chevron-down dropdown-toggle-icon"></span></a>
+                    <div class="dropdown-menu navbar-dropdown-caret dropdown-menu-card py-0 overflow-hidden">
+                      <div class="border-0">
+                        <div class="row">
+                          <div class="col d-none d-lg-block position-relative">
+                            <div class="bg-holder overlay overlay-1" style="background-image:url('{% static 'assets/images/megamenu.jpg' %}')"></div>
+                            <div class="row justify-content-center h-100 py-9 position-relative">
+                              <div class="col-6 align-self-center">
+                                <p class="fs-8 lh-lg"> Detailed and organised components</p><a class="btn btn-outline-white btn-sm" href="#">Start Creating </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="row justify-lg-content-center py-3 py-lg-5 ps-lg-5 g-0">
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <section class="p-0">
+            <div class="swiper-theme-container home-slider" data-swiper-theme-container="data-swiper-theme-container">
+              <div class="swiper" data-swiper='{"effect":"fade","loop":true}'>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <section class="text-white">
+                      <div class="bg-holder" style="background-image:url('{% static 'assets/images/shop/shop-banner-2.jpg' %}');"></div>
+                      <div class="container">
+                        <div class="row min-vh-50 align-items-center">
+                          <div class="col-md-6 col-lg-5 col-xl-4">
+                            <div class="py-4 text-center shop-slider-card">
+                              <h6 class="text-uppercase ls-2"> Shirt &amp; Sweet </h6>
+                              <div class="fs-4 font-sans-serif lh-2 my-4 text-1200">
+                                All Shirts <br />40% Off </div><a class="link-1200" href="#!"> <span class="text-decoration-underline fw-normal font-sans-serif">Shop Denim Shirts </span></a>
+                              <p class="fs-10 text-700 mb-0">Excludes clearance </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="swiper-slide">
+                    <section class="text-white">
+                      <div class="bg-holder" style="background-image:url('{% static 'assets/images/shop/shop-banner-1.jpg' %}');"></div>
+                      <div class="container">
+                        <div class="row min-vh-50 align-items-center">
+                          <div class="col-md-6 col-lg-5 col-xl-4">
+                            <div class="py-4 text-center shop-slider-card">
+                              <h6 class="text-uppercase ls-2"> Travel Fashion</h6>
+                              <div class="fs-4 font-sans-serif lh-2 my-4 text-1200"> <span class="fs-5">All items</span><br />
+                                <div class="fw-semi-bold">$20 </div>
+                                <div class="fs-6">or less</div>
+                              </div><a class="btn btn-danger" href="#!">Shop Now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div class="swiper-nav">
+                  <div class="swiper-button-next"> </div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ============================================-->
+          <!-- <section> begin ============================-->
+          <section class="pt-0 pb-4 text-center">
+
+            <div class="container">
+              <div class="row g-0 border border-top-0 border-300">
+                <div class="col-12">
+                  <hr class="my-0 text-danger" />
+                  <hr class="my-0 text-danger" />
+                </div>
+
+              </div>
+            </div>
+            <!-- end of .container-->
+
+          </section>
+          <!-- <section> close ============================-->
+          <!-- ============================================-->
+
+          <!-- ============================================-->
+          <!-- <section> begin ============================-->
+          <section class="py-5 bg-100">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 pe-lg-8 pb-5 pb-lg-0">
+                  <h5>Latest Trends, Styles &amp; Promotions. Are you on the list?</h5>
+                  <form method="POST" onsubmit="return false;">
+                    <div class="input-group">
+                      <input class="form-control bg-white" type="email" name="email" placeholder="Enter your email" />
+                      <button class="btn btn-danger" type="button"> Sign up!</button>
+                    </div>
+                  </form>
+                  <div class="fs-10 my-2 text-800"> By entering your email address, you agree to receive Charlotte Russe offers, promotions, and other commercial messages. You may unsubscribe at any time. Review our<a href="#!"> Privacy Policy.</a></div>
+                  <div class="d-flex flex-wrap align-items-center mt-5"><a class="d-inline-block me-2" href="#!"><img src="{% static 'assets/images/app-google.png' %}" alt="" /></a><a class="d-inline-block" href="#!"><img src="{% static 'assets/images/app-apple.png' %}" alt="" /></a>
+                    <div class="d-flex align-items-center"><a class="p-2 text-800 fs-8 ms-0 ms-sm-3 ms-lg-0 ms-xl-3" href="#!"><span class="fab fa-instagram"></span></a><a class="p-2 text-800 fs-8" href="#!"><span class="fab fa-facebook-f" style="font-size: 18px" data-fa-transform="grow-1 up-1"></span></a><a class="p-2 text-800 fs-8" href="#!"><span class="fab fa-twitter" style="font-size: 19px"> </span></a></div>
+                  </div>
+                  <p class="fs-10 mt-1 text-900 mb-0">&copy; 2017 Posh. All rights reserved.</p>
+                </div>
+                <div class="col-md-4 col-lg-2 pb-5 pb-md-0 fs-10">
+                  <h6 class="text-1000 text-uppercase">Company </h6>
+                  <hr class="mt-3 short text-400" /><a class="link-800 d-block p-1" href="#!"> About Us </a><a class="link-800 d-block p-1" href="#!"> Careers</a><a class="link-800 d-block p-1" href="#!"> Privacy Policy </a><a class="link-800 d-block p-1" href="#!"> Terms of Use </a><a class="link-800 d-block p-1" href="#!"> CA Transparency</a><a class="link-800 d-block p-1" href="#!"> Community </a>
+                </div>
+                <div class="col-md-4 col-lg-2 pb-5 pb-md-0 fs-10">
+                  <h6 class="text-1000 text-uppercase">Customer Support</h6>
+                  <hr class="mt-3 short text-400" /><a class="link-800 d-block p-1" href="#!"> Customer Service </a><a class="link-800 d-block p-1" href="#!"> Contact Us</a><a class="link-800 d-block p-1" href="#!"> Track Order </a><a class="link-800 d-block p-1" href="#!"> Shipping Info </a><a class="link-800 d-block p-1" href="#!"> Returns &amp; Exchanges</a><a class="link-800 d-block p-1" href="#!"> Affiliate Program</a>
+                </div>
+                <div class="col-md-4 col-lg-2 fs-10">
+                  <h6 class="text-1000 text-uppercase">Quicklinks</h6>
+                  <hr class="mt-3 short text-400" /><a class="link-800 d-block p-1" href="#!"> FAQs</a><a class="link-800 d-block p-1" href="#!"> Size Chart</a><a class="link-800 d-block p-1" href="#!"> Find a Store </a><a class="link-800 d-block p-1" href="#!"> Site Map</a><a class="link-800 d-block p-1" href="#!"> Gift Cards</a>
+                </div>
+              </div>
+            </div>
+            <!-- end of .container-->
+
+          </section>
+          <!-- <section> close ============================-->
+          <!-- ============================================-->
+
+
+        </div>
+      </div>
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+{% endblock %}
