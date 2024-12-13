@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- ============================================-->
+          <!-- <section> begin ============================-->
+          <section class="p-0">
+
+            <div class="bg-holder overlay" style="background-image:url({% static 'assets/images/frigoworld/contact-04.jpg' %});">
+            </div>
+            <!--/.bg-holder-->
+
+            <div class="container">
+              <div class="row min-vh-50 align-items-center py-5">
+                <div class="col-md-8 col-lg-5">
+                  <h1 class="text-white fs-6 fs-md-5 mb-3">Contacteer Ons</h1>
+                  <p class="fs-8 fw-light text-white">Neem gerust contact met ons op voor ondersteuning.</p>
+                </div>
+              </div>
+            </div>
+            <!-- end of .container-->
+
+          </section>
+          <!-- <section> close ============================-->
+          <!-- ============================================-->
+
+
+
+
+          <!-- ============================================-->
+          <!-- <section> begin ============================-->
+          <section>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5">
+                  <h3 class="text-uppercase fw-light">Contact</h3>
+                  <hr class="text-1200 short mb-5" />
+                  <div class="row">
+                    <div class="col-auto pe-0" style="min-width: 16px;"><span class="fas fa-map-marker-alt" style="font-size: 13px;"> </span></div>
+                    <div class="col">
+                      <p class="fw-light fs-9 text-700 mb-2"><strong class="text-1100 fw-normal">Frigoworld</strong><br />Wanzelesteenweg 98<br />9260 Serskamp</p>
+                      <p class="mb-3"><strong class="text-1100 fw-normal">Telefoon: &nbsp;&nbsp;&nbsp;&nbsp; </strong>+32 477 22 29 76<br /><strong class="text-1100 fw-normal">Telefoon: &nbsp;&nbsp;&nbsp;&nbsp;</strong>xxx</p>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-auto pe-0" style="min-width: 16px;"> <span class="fas fa-envelope" style="font-size:13px;"></span></div>
+                    <div class="col"> <a class="fs-9" href="mailto:info@frigoworld.be"> info@frigoworld.be</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <form class="posh-form" method="POST" action="{% url 'contact' %}">
+                      {% csrf_token %}
+                    <div class="mb-3">
+                      <input class="form-control" type="text" name="name" placeholder="Naam" required="required" />
+                    </div>
+                    <div class="mb-3">
+                      <input class="form-control" type="email" name="from" placeholder="Email" required="required" />
+                    </div>
+                    <div class="mb-3">
+                      <textarea class="form-control" rows="8" name="message" placeholder="Bericht"></textarea>
+                    </div>
+                    <input class="btn btn-primary" type="submit" name="submit" value="Verstuur!" />
+                    <div class="form-feedback mt-3"></div>
+                  </form>
+                </div>
+                <div class="col mt-5">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.8790099779094!2d3.9367690769601684!3d50.981426948990574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c398d0c24d528f%3A0x57cfb843b449606f!2sWanzelesteenweg%2098%2C%209260%20Wichelen!5e0!3m2!1snl!2sbe!4v1734103302328!5m2!1snl!2sbe" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+            <!-- end of .container-->
+
+          </section>
+          <!-- <section> close ============================-->
+          <!-- ============================================-->
+{% endblock %}
