@@ -46,3 +46,7 @@ def contact(request):
             messages.error(request, f'Er ging iets mis bij het versturen: {e}')
 
     return render(request, 'contact.html')
+
+
+def catalogus_overzicht(request):
+    return render(request, 'catalogus\catalogus_overzicht.html')
