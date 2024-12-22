@@ -484,82 +484,6 @@ var dropdownOnHover = function dropdownOnHover() {
   }
 };
 
-/* -------------------------------------------------------------------------- */
-/*                               Form-InputFile                               */
-/* -------------------------------------------------------------------------- */
-
-var formInputFileInit = function formInputFileInit() {
-  var inputs = document.querySelectorAll('.inputfile');
-  if (inputs.length) {
-    inputs.forEach(function (input) {
-      // Svg before label
-      var label = input.nextElementSibling;
-      var labelVal = label.innerHTML;
-      label.insertAdjacentHTML('afterbegin', '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path></svg>');
-
-      //File select
-      input.addEventListener('change', function (e) {
-        var files = e.target.files;
-        var fileName = '';
-        if (files && files.length > 1) {
-          fileName = (_this.getAttribute('data-multiple-caption') || '').replace('{count}', _this.files.length);
-        } else {
-          fileName = e.target.value.split('\\').pop();
-        }
-        if (fileName) {
-          label.querySelector('span').innerHTML = fileName;
-        } else {
-          label.innerHTML = labelVal;
-        }
-      });
-      input.addEventListener('focus', function () {
-        input.classList.add('has-focus');
-      });
-      input.addEventListener('blur', function () {
-        input.classList.remove('has-focus');
-      });
-    });
-  }
-};
-
-/* -------------------------------------------------------------------------- */
-/*                               Form-Processor                               */
-/* -------------------------------------------------------------------------- */
-
-var formInit = function formInit() {
-  var zforms = document.querySelectorAll('[data-form]');
-  if (zforms.length) {
-    zforms.forEach(function (form) {
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var feedbackEl = form.querySelector('.feedback');
-        var formData = {};
-        Array.from(form.elements).forEach(function (el) {
-          if (el.type !== 'submit') {
-            formData[el.name] = el.value;
-          }
-        });
-        window.Email.send({
-          Host: 'smtp.mailtrap.io',
-          Username: 'Your User Name ',
-          Password: 'Your Password',
-          To: formData.email,
-          From: 'you@isp.com',
-          Subject: 'This is the subject',
-          Body: '\n<p>'.concat(formData.name, '</p>\n<p>').concat(formData.message, '</p>\n')
-        })
-        // eslint-disable-next-line no-unused-vars
-        .then(function (_message) {
-          feedbackEl.innerHTML = '<div class=\'alert alert-success alert-dismissible\' role=\'alert\'>\n<button type=\'button\' class=\'btn-close fs--1\' data-bs-dismiss=\'alert\' aria-label=\'Close\'></button>\nYour message has been sent successfully.\n</div>';
-        })
-        // eslint-disable-next-line no-unused-vars
-        ["catch"](function (_error) {
-          feedbackEl.innerHTML = '<div class=\'alert alert-danger alert-dismissible\' role=\'alert\'>\n <button type=\'button\' class=\'btn-close fs--1\' data-bs-dismiss=\'alert\' aria-label=\'Close\'></button>\nYour message not sent.\n</div>';
-        });
-      });
-    });
-  }
-};
 
 /* -------------------------------------------------------------------------- */
 /*                               Form-submission                              */
@@ -575,7 +499,7 @@ var formSubmissionInit = function formSubmissionInit() {
         var submitText = submit.value;
         submit.value = 'Sending...';
         var formData = new FormData(form);
-        fetch('/url', {
+        fetch('/contact/', {
           method: 'POST',
           body: formData
         }).then(function (response) {
@@ -583,6 +507,12 @@ var formSubmissionInit = function formSubmissionInit() {
         }).then(function (result) {
           form.querySelector('.form-feedback').innerHTML = result != null ? result : '';
           submit.value = submitText;
+          var successDiv = document.getElementById('succesbericht');
+          if (successDiv) {
+            successDiv.classList.add('alert');
+            successDiv.classList.add('alert-success'); // Zorg ervoor dat de stijl goed is
+            successDiv.innerHTML = 'Succesvol!';
+          }  // Herlaad de pagina
         })["catch"](function (error) {
           console.log(error);
           submit.value = submitText;

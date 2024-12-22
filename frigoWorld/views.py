@@ -1,7 +1,7 @@
 from django.contrib import messages
 from django.core.exceptions import ValidationError
 from django.core.validators import validate_email
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from django.conf import settings
 from django.http import HttpResponseRedirect
@@ -14,8 +14,8 @@ def home(request):
 
 def contact(request):
     if request.method == "POST":
-        print("POST")
-        naam = request.POST.get('naam')
+        print("Post")
+        naam = request.POST.get('name')
         email = request.POST.get('from')
         bericht = request.POST.get('message')
 
@@ -38,9 +38,11 @@ def contact(request):
 
         try:
             send_mail(subject, message, from_email, recipient_list)
+            print("Verstuurd")
             messages.success(request, 'Bericht werd succesvol verstuurd.')
-            return HttpResponseRedirect(reverse('contact'))
+            return render(request, 'contact.html')  # Redirect na succesvol verzenden
         except Exception as e:
+            print("Error")
             messages.error(request, f'Er ging iets mis bij het versturen: {e}')
 
     return render(request, 'contact.html')
