@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <h1>Item bewerken</h1>
+    <form method="post" action="{% url 'item_update' item.id %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Opslaan</button>
+    </form>
+{% endblock %}
