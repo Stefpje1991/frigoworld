@@ -1780,7 +1780,5 @@ docReady(bgPlayerInit);
 docReady(isotopeInit);
 docReady(tabsInit);
 docReady(tooltipInit);
-docReady(formInputFileInit);
 docReady(hamburgerInit);
-docReady(formInit);
 //# sourceMappingURL=theme.js.map

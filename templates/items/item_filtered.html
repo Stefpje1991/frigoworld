@@ -8,11 +8,11 @@
       <div class="row">
          <div class="col-2 d-none d-lg-block">
             <div id="filters">
-               <h6 class="mb-0 lh-4"> Categorie </h6>
+               <h6 class="mb-0 lh-4">Categorie</h6>
                <hr class="text-300 my-2" />
                <div class="form-check mb-0">
                   <label for="professioneel" class="form-check-label fw-normal">Professioneel
-                  <input class="form-check-input me-2" id="professioneel" type="radio" name="category" value="Professioneel" />
+                  <input class="form-check-input me-2" id="professioneel" type="radio" name="category" value="Professioneel" checked />
                   </label>
                </div>
                <div class="form-check mb-0">
@@ -25,13 +25,8 @@
                   <input class="form-check-input me-2" id="wijnfrigo" type="radio" name="category" value="Wijnfrigo" />
                   </label>
                </div>
-               <div class="form-check mb-0">
-                  <label for="alles" class="form-check-label fw-normal">Alle toestellen
-                  <input class="form-check-input me-2" id="alles" type="radio" name="category" value="all" checked />
-                  </label>
-               </div>
             </div>
-            <h6 class="mb-0 lh-4"> Inhoud </h6>
+            <h6 class="mb-0 lh-4">Inhoud</h6>
             <hr class="text-300 my-2" />
             <div class="form-check mb-0">
                <label class="form-check-label fw-normal">
@@ -48,7 +43,7 @@
                <input class="form-check-input me-2" id="otptionsRadios31" type="radio" name="optionsRadios2" value="option3" />Meer dan 200 liter
                </label>
             </div>
-            <h6 class="mt-3">Gemiddelde beoordeling </h6>
+            <h6 class="mt-3">Gemiddelde beoordeling</h6>
             <hr class="text-300 my-2" />
             <a href="#!">
                <div class="text-warning"> <span class="fas fa-star me-1" style="width: 15px"></span><span class="fas fa-star me-1" style="width: 15px"> </span><span class="fas fa-star me-1" style="width: 15px"></span><span class="fas fa-star me-1" style="width: 15px"> </span><span class="far fa-star me-1" style="width: 15px"> </span><span class="d-inline-block fs-10 text-700">&amp; hoger </span></div>
@@ -62,7 +57,7 @@
             <a href="#!">
                <div class="text-warning"> <span class="fas fa-star me-1" style="width: 15px"></span><span class="far fa-star me-1" style="width: 15px"> </span><span class="far fa-star me-1" style="width: 15px"></span><span class="far fa-star me-1" style="width: 15px"> </span><span class="far fa-star me-1" style="width: 15px"> </span><span class="d-inline-block fs-10 text-700">&amp; hoger </span></div>
             </a>
-            <h6 class="mt-3">Prijs </h6>
+            <h6 class="mt-3">Prijs</h6>
             <hr class="text-300 my-2" />
             <p class="fs-10 mb-1">Onder € 1.500</p>
             <p class="fs-10 mb-1">€ 1.500 tot € 2.500</p>
@@ -79,10 +74,10 @@
                      <div class="form-group mb-0 me-3">
                         <label class="d-inline" for="exampleInputName">Sorteer op</label>
                         <select class="form-select d-inline-block ms-2" id="exampleInputName" name="sortby" style="width: 180px; height:auto;">
-                           <option value="price">Prijs (laag naar hoog) </option>
-                           <option value="price">Prijs (hoog naar laag) </option>
-                           <option value="popularity">Inhoud </option>
-                           <option value="rating">Beoordeling </option>
+                           <option value="price">Prijs (laag naar hoog)</option>
+                           <option value="price">Prijs (hoog naar laag)</option>
+                           <option value="popularity">Inhoud</option>
+                           <option value="rating">Beoordeling</option>
                         </select>
                      </div>
                   </form>
@@ -119,9 +114,7 @@
                               <a class="link-700" href="#!">(1)</a> | <a class="link-700" href="#!">Orders (0)</a>
                            </div>
                            <div class="mt-2">
-                              <a class="link-700 fs-10" href="#!">
-                              <span class="fas fa-heart me-1"> </span>Toevoegen aan winkelwagen
-                              </a>
+                              <a class="link-700" href="#!">Toevoegen aan winkelwagentje</a>
                            </div>
                         </div>
                      </div>
@@ -129,21 +122,8 @@
                </div>
                {% endfor %}
             </div>
-            <nav class="mt-5" aria-label="Page Navigation">
-               <ul class="pagination justify-content-center">
-                  <li class="page-item"> <a class="page-link" href="#!" aria-label="Previous"> <span aria-hidden="true"> &laquo;</span></a></li>
-                  <li class="page-item active"><a class="page-link" href="#!"> 1</a></li>
-                  <li class="page-item"><a class="page-link" href="#!"> 2</a></li>
-                  <li class="page-item"><a class="page-link" href="#!"> 3</a></li>
-                  <li class="page-item"><a class="page-link" href="#!"> 4</a></li>
-                  <li class="page-item"> <a class="page-link" href="#!" aria-label="Next"><span aria-hidden="true"> &raquo;</span></a></li>
-               </ul>
-            </nav>
          </div>
       </div>
    </div>
-   <!-- end of .container-->
 </section>
-<!-- <section> close ============================-->
-<!-- ============================================-->
 {% endblock %}

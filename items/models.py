@@ -1,10 +1,12 @@
 from django.db import models
 
+
 class ItemCategorie(models.Model):
     naam = models.CharField(max_length=100, unique=True)
 
     def __str__(self):
         return self.naam
+
 
 class Item(models.Model):
     naam = models.CharField(max_length=100)
